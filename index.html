@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Mobile Web App</title>
+<link rel="stylesheet" href="charitytheme.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ <link href="charity.css" rel="stylesheet" type="text/css"/>
+<script>
+$( "#idofpanel" ).panel( "open" , optionsHash );
+$( "#mypanel" ).trigger( "updatelayout" );
+
+$( "#idofpanel2" ).panel( "open" , optionsHash );
+</script>
+<style>
+#jailbrake { 
+max-width: 100%;
+width:500px; 
+height:300px; 
+border:5px dotted #black; 
+margin-top:20%; 
+}
+
+
+#form{ 
+width:240px; 
+height:500px; 
+border:5px solid #efefef; 
+margin:auto; 
+
+}
+
+#img{
+	max-width: 100%;
+	
+    /* ie8 */
+}
+#mypanel {
+	width: 300px;
+	border: 1px solid #000;
+	border-right: none;
+	background: rgba(0,0,0,.5);
+	margin: -1px 0;
+}
+
+
+</style>
+
+</head>
+<body>
+<div data-role="page">			
+
+    <div data-role="panel" id="mypanel" data-position="left" data-display="overlay">
+   <ul data-role="listview">
+   <li data-icon="back"><a href="#Map1" >Map</a></li>
+   <li data-icon="back"><a href="#food1">Food & Drinks</a></li>
+   <li data-icon="back"><a href="<a href="tel:911">Help Line</a></li>
+   </ul>
+     
+    </div>
+    	
+    <div data-role="panel" id="mypanel_2" data-position="right" data-display="overlay">
+
+<div id ="form">
+<div data-role="fiedcontain" data-type="vertical" data-position="right">
+
+<img src="banner.png" width="240" height="40" align="middle" top="0">   
+  <p> join us </p>
+
+<form action="contactform..php" method="post" name="save" id="tasks-list">
+E-mail: <input type="email" name="user_email" id="email">
+<label for="name">Full Name:</label>
+<input type="text" name="text" id="name">
+<fieldset data-role="fieldcontain">
+<label for="level">Select your level</label>
+<select name="level" id="level" data-native-menu="false">
+<option value="four">join</option>
+<option value="five">complaint</option>
+<option value="six" selected>message</option>
+</select>
+</fieldset>
+<label for="info">Comment
+Here:</label>
+<textarea name="addinfo" id="message" placeholder=
+"comment here ...">
+</textarea>
+  <input name="COSubmit" type="submit" id=
+"save" value="Save" data-icon="check"
+data-inline="true" data-theme="a" />
+</form>
+</div>      </div>
+  </div>
+   <!-- /panel -->
+ 
+    
+<div data-role="header">
+
+       <a href="#mypanel" data-rel="popup" data-transition="slide" data-role="button" data-icon="grid" data-iconpos="notext">grid</a>
+       <a href="#mypanel_2" data-rel="popup" data-transition="slide" data-role="button" data-icon="plus" data-iconpos="notext">plus</a>
+
+
+  <center> 
+    <img src="logo.jpg" width="364" height="138" alt="logo"/>
+  </center>
+
+  </div>
+
+  <div data-role="main" class="ui-content">
+<div data-role="navbar">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#About Us1">About Us</a></li>
+			<li><a href="#socials1">socials </a></li>
+		</ul>
+	</div><!-- /navbar -->
+    <br>
+<div id="jailbrake" align="center"> this is where the jail brake code &nbsp;would be </div>
+    </div>
+
+  <div data-role="footer" data-position="fixed">	
+    <img src="instagram-icon-small.jpg" width="20" height="20" alt="insta" align="Right">
+   <img src="twitter-icon-small.png" width="20" height="20" alt="tube" align="Right">
+   <img src="youtube-icon.png" width="20" height="20" alt="you" align="Right">
+    <img src="facebook.png" width="20" height="20" alt="face"align="Right"> </div><!-- /footer -->
+</div>
+
+ 
+ <div data-role="page" id="Map1">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup">
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+<div data-role="page" id="food1">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup" >
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		http://www.dreamdealer.nl/tutorials/using_geolocation_to_automatically_generate_a_route_and_directions_in_google_maps.html
+        
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="Help1">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup" >
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="home">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup" >
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="About Us1">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup" >
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="socials1">
+	<div data-role="header" data-add-back-btn="true" data-transition="slideup" >
+		<h1>Page Two</h1>
+	</div>
+	<div data-role="content">	
+		
+        
+        
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+</body>
+</html>
